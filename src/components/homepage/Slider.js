@@ -55,8 +55,7 @@ class Slider extends Component {
         return (
           <li key={_.uniqueId()}>
             <figure>
-              <a href="#">
-                <img className="img-responsive img-full-width" src={slide.src} width="1440" height="600" alt={slide.alt} title={slide.alt} />    </a>
+              <img className="img-responsive img-full-width" src={slide.src} width="1440" height="600" alt={slide.alt} title={slide.alt} />
             </figure>
           </li>
         );

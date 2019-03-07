@@ -22,14 +22,14 @@ class OtherPageWrapper extends Component {
       <section>
         <Switch>
           <Route exact path="/AllSermons" component={AllSermons} />
-          <Route exact path="/Sermons" component={Sermons} />
+          <Route exact path="/Sermons" component={AllSermons} />
           <Route exact path="/sermon/:nid" component={SermonPage} />
           <Route exact path="/sermon/:nid/:title" component={SermonPage} />
           <Route exact path="/series/:nid" component={SermonSeriesPage} />
           <Route exact path="/series/:nid/:title" component={SermonSeriesPage} />
 
-          <Route exact path="/OurPeople" component={OurPeople} />
-          <Route exact path="/ContactUs" component={ContactUs} />
+          {/*<Route exact path="/OurPeople" component={OurPeople} />*/}
+          <Route exact path="/Contact" component={ContactUs} />
 
           <Route path="/*" component={OtherPageContent} />
         </Switch>

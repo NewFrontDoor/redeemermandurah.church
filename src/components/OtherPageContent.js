@@ -10,7 +10,7 @@ class OtherPageContent extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Page Title</h1>
+                  <h1></h1>
                 </div>
               </div>
 
@@ -19,7 +19,7 @@ class OtherPageContent extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Page Category</span>
+                    <span title="" className="nolink"></span>
                   </div>
                 </div>
               </div>

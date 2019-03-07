@@ -4,7 +4,7 @@ import _ from 'lodash';
 import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
 
-//import { getFromDrupalAPI } from '../../utils/fetchJSON';
+import { getFromDrupalAPI } from '../../utils/fetchJSON';
 
 import '../../assets/css/audioplayer.css'
 
@@ -15,11 +15,11 @@ class LatestSermon extends Component {
   }
 
   componentWillMount() {
-    /*var that = this;
+    var that = this;
 
     getFromDrupalAPI('all_sermons_api?limit=1', function (data) {
       that.setState({ latestSermon: data });
-    });*/
+    });
 
   }
   render() {

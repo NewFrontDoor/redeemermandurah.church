@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/LyleLogo.png';
 
 class Navigation extends Component {
   render() {
@@ -39,7 +39,7 @@ class Navigation extends Component {
                     <div className="tb-megamenu tb-megamenu-main-menu">
                       <div className="nav-collapse  always-show">
                         <ul className="tb-megamenu-nav nav level-0 items-5">
-                          <li className="tb-megamenu-item level-1 mega dropdown">
+                          {/* <li className="tb-megamenu-item level-1 mega dropdown">
                             <a href="javascript:void(0);" className="dropdown-toggle" title="Visit Us">
 
                               Visit Us         <span className="caret"></span>
@@ -110,18 +110,16 @@ class Navigation extends Component {
                               </div>
                             </div>
                           </li>
-
+                          */}
 
 
                           <li className="tb-megamenu-item level-1 mega">
                             <a href="/Sermons" >Sermons</a>
                           </li>
-                          <li className="tb-megamenu-item level-1 mega">
-                            <a href="/OurPeople" >People</a>
-                          </li>
+
 
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/ContactUs" title="Contact Us">Contact Us</a>
+                            <a href="/Contact" title="Contact Us">Contact</a>
                           </li>
                         </ul>
                       </div>

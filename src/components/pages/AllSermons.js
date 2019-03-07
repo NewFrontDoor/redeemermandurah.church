@@ -141,7 +141,7 @@ class Sermons extends Component {
   render() {
     if (!this.state.sermons) {
       //var sermons = <tr><td>Loading, please wait.</td></tr>;
-      var sermons = <tr><td>Currently unavailable.</td></tr>;
+      var sermons = <tr><td></td></tr>;
     }
     else {
       var tdPadding = { padding: "0px 5px 0px 5px" };
@@ -149,10 +149,10 @@ class Sermons extends Component {
         return (
           <tr key={_.uniqueId()} className="odd even">
             {sermon.node_title ? <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>{sermon.node_title}</a></td> : <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>Untitled</a></td>}
-            {sermon.sermonseries ? <td style={tdPadding}><a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a></td> : <td style={tdPadding}></td>}
+            {/*sermon.sermonseries ? <td style={tdPadding}><a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a></td> : <td style={tdPadding}></td>*/}
             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
             <td style={tdPadding}>{decode(sermon.preacher)}</td>
-            <td style={tdPadding}>{sermon.datepreached}</td>
+            <td style={tdPadding}>{/*sermon.datepreached*/}</td>
             <td style={tdPadding}><a href={sermon.url} target="_blank" rel="noopener noreferrer"><i className="fa fa-download"></i></a></td>
           </tr>
         )
@@ -189,7 +189,7 @@ class Sermons extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>All Sermons</h1>
+                  <h1>Sermons</h1>
                 </div>
               </div>
 
@@ -198,7 +198,7 @@ class Sermons extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Resources</span>
+                    <span title="" className="nolink">Sermons</span>
                   </div>
                 </div>
               </div>
@@ -217,7 +217,7 @@ class Sermons extends Component {
 
                   <div className="content">
                     <div className="view view-All-Sermons view-id-All_Sermons view-display-id-page view-dom-id-8cf9a4aecfefa92964ac5f3e5a33e04e jquery-once-1-processed">
-                      <div className="col-md-3">View Sermon Series:<select className="form-control" id="sermonSelect" onChange={event => this.loadSermonSeries(event.target.value)}>
+                      {/* <div className="col-md-3">View Sermon Series:<select className="form-control" id="sermonSelect" onChange={event => this.loadSermonSeries(event.target.value)}>
                         <option value="">---</option>
                         {sermonSeriesOptions}
                       </select></div>
@@ -238,7 +238,7 @@ class Sermons extends Component {
                           <br />
                           <input type="submit" value="Search" className="btn btn-primary sermon-search-button" />
                         </form>
-                      </div>
+    </div>*/}
 
 
 
@@ -247,7 +247,7 @@ class Sermons extends Component {
                           <thead>
                             <tr>
                               <th></th>
-                              <th>Sermon Series</th>
+                              {/*<th>Sermon Series</th>*/}
                               <th>Bible Passage(s)</th>
                               <th>Preacher</th>
                               <th>Date Preached</th>
@@ -280,7 +280,7 @@ class Sermons extends Component {
             </div> {/* /row */}
           </div> {/* /container */}
         </div>
-      </section>
+      </section >
     );
   }
 }
