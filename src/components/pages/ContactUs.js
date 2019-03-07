@@ -92,7 +92,7 @@ class ContactUs extends Component {
 
     var messageSent = (
       <div className="content block block-block">
-        <p>Thank you for contacting us! <br /><br /> We will get back to you as soon as possible.</p>
+        <p>Thank you for contacting me! <br /><br /> I will get back to you as soon as possible.</p>
         <br />
         {/*<a href="/"><input type="button" value="Return to the Home Page?" className="btn btn-primary"/></a>*/}
       </div>
@@ -105,7 +105,7 @@ class ContactUs extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Contact Us</h1>
+                  <h1>Contact</h1>
                 </div>
               </div>
 
