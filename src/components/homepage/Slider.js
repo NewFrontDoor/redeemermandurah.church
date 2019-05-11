@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
-import slider1 from '../../assets/img/Photo Weatherstone.jpg';
+import slider1 from '../../assets/img/Photo Wetherston.jpg';
 
 class Slider extends Component {
   constructor() {
